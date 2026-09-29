@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+python-multipart
+bcrypt
+python-jose[cryptography]
+pydantic
+python-dotenv
+pypdf
+python-docx
+google-genai
+chromadb
+openai
+

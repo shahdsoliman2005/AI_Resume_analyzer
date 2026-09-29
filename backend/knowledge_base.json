@@ -1,0 +1,37 @@
+[
+  {
+    "id": "kb1",
+    "category": "resume_writing",
+    "text": "A strong resume opens with a 2-3 line professional summary, followed by experience listed newest first, with each entry written using strong verbs (developed, led, improved) and clear numbers to back up the achievement."
+  },
+  {
+    "id": "kb2",
+    "category": "resume_writing",
+    "text": "Avoid vague skills like 'good communicator' with no evidence. Write a real situation instead that demonstrates the skill in practice."
+  },
+  {
+    "id": "kb3",
+    "category": "career_roadmap",
+    "text": "If your goal is Machine Learning, the usual path is: solid Python fundamentals, statistics and linear algebra, libraries like NumPy, Pandas and Scikit-learn, then a full hands-on project on GitHub."
+  },
+  {
+    "id": "kb4",
+    "category": "career_roadmap",
+    "text": "For Backend Development, focus on one language well (Python or JavaScript), understand REST APIs, SQL and NoSQL databases, and deployment basics like Docker."
+  },
+  {
+    "id": "kb5",
+    "category": "skills",
+    "text": "Commonly required NLP skills: text processing (tokenization, embeddings), libraries like Hugging Face Transformers, and a basic understanding of LLMs and RAG."
+  },
+  {
+    "id": "kb6",
+    "category": "certifications",
+    "text": "Recognized certifications in AI: Google's Machine Learning Crash Course, DeepLearning.AI specializations on Coursera, and AWS Certified Machine Learning."
+  },
+  {
+    "id": "kb7",
+    "category": "interview_prep",
+    "text": "Before any technical interview, review your personal projects well and be ready to explain every technical decision you made and why, not just what you built."
+  }
+]

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume Analyzer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="boot">
+    <span class="pencil-spin"></span>
+    <span>Opening your desk…</span>
+  </div>
+  <script>
+    const token = localStorage.getItem("access_token");
+    window.location.href = token ? "dashboard.html" : "login.html";
+  </script>
+</body>
+</html>

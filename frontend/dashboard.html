@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Review a resume — Resume Analyzer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <span class="brand">Resume Analyzer</span>
+    <div class="tab-group">
+      <a href="dashboard.html" class="tab active">Review</a>
+      <a href="jobs.html" class="tab">Jobs</a>
+    </div>
+    <a href="#" class="signout" onclick="logout()">Sign out</a>
+  </nav>
+
+  <div class="page">
+    <div class="page-head">
+      <span class="eyebrow">Step one</span>
+      <h1>Upload a resume</h1>
+      <p style="color: var(--muted);">PDF only. We'll read it, score it, and pull out what matters.</p>
+    </div>
+
+    <div class="sheet">
+      <form id="uploadForm">
+        <div class="dropzone">
+          <div class="slot-icon">⇪</div>
+          <div class="slot-text">
+            <strong>Choose a PDF resume</strong>
+            <span>One file, up to a few pages, in English or Arabic.</span>
+          </div>
+          <input type="file" id="resumeFile" accept="application/pdf" required>
+        </div>
+        <button type="submit" id="analyzeBtn" class="primary">Review this resume</button>
+      </form>
+
+      <div id="loading" style="display:none;">
+        <span class="pencil-spin"></span>
+        <span>Reading the resume, one line at a time…</span>
+      </div>
+      <div class="error" id="errorMsg"></div>
+    </div>
+
+    <div id="results" class="sheet" style="display:none;">
+      <span class="eyebrow">The verdict</span>
+      <h2>Reviewer's report</h2>
+
+      <div class="report-row">
+        <div class="grade-ring"><span id="experience">–</span></div>
+        <div class="field-note">
+          <div class="label">Years of experience</div>
+          <div class="value">Top qualification: <span id="education"></span></div>
+        </div>
+      </div>
+
+      <div class="margin-note" id="summary"></div>
+
+      <div class="skill-group">
+        <div class="label">Technical skills</div>
+        <div id="technicalSkills"></div>
+      </div>
+
+      <div class="skill-group">
+        <div class="label">Soft skills</div>
+        <div id="softSkills"></div>
+      </div>
+
+      <button id="findJobsBtn" class="primary" style="margin-top:6px;">Find matching jobs</button>
+    </div>
+
+    <div id="matchesSection" class="sheet" style="display:none;">
+      <span class="eyebrow">Step two</span>
+      <h2>Closest matches</h2>
+      <div id="matchesList"></div>
+    </div>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
